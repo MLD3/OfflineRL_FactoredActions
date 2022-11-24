@@ -19,8 +19,12 @@ If you use this code in your research, please cite the following publication:
 ```
 
 ## Synthetic domains
+- `MakeEnvFigures-{main|appendix}.ipynb` generates diagrams for all toy MDPs (Fig 2-4, Fig 9-15)
 - Bandit 2D (Sec 3.3.2)
+    - `Bandit2D.ipynb`: explores how an agent learns in various two-dimensional bandit environments
+    - `bandits_OVB.ipynb`: Fig 5
 - Chain 2D (Sec 3.1, 3.2)
+    - `Chain2D.ipynb`: explores how an agent learns in various two-dimensional chain environments
 
 ## Sepsis simulator (Sec 4.1)
 - Simulator based on publicly available code at https://github.com/clinicalml/gumbel-max-scm/tree/sim-v2
@@ -34,7 +38,16 @@ If you use this code in your research, please cite the following publication:
     - eps_1: uniformly random policy
     - suboptimal99: take the optimal action w.p. ρ=0.01; randomly sample the remaining actions w.p. 0.99
     - suboptimal: never take the optimal action; randomly sample the remaining actions
+- `Fig-NFQ-all-large.ipynb` generates all plots in Fig 6
 
 ## MIMIC-sepsis (Sec 4.2)
 - Cohort extraction based on publicly available code at https://github.com/microsoft/mimic_sepsis
 - RNN AIS based on publicly available code at https://github.com/MLforHealth/rl_representations/
+- `./EvalPlots/` contains the code to generate the result table and visualizations
+    - `PlotValidation.ipynb`: Fig 16
+    - `ModelSelection.ipynb`: Fig 7 left, Fig 17, Fig 18
+    - `QuantitativeEval.ipynb`: Fig 7-right (WIS and ESS of the two RL policies and clinician behavior, with error bars)
+    - `ComparePolicies.ipynb`: Fig 7-right (agreement between RL policies and clinician behavior)
+    - `BehaviorCloningAccuracy.ipynb`: Fig 7-right (estimated inter-clinician agreement)
+    - `Visualize.ipynb`: Fig 8a
+    - `Visualize-Std.ipynb`: Fig 8b
